@@ -2,4 +2,4 @@
 
 echo "Really powerful plugin about to run!";
 
-echo "Now with GitHub Actions auto-deploy! Maybe...";
+echo "Now with GitHub Actions auto-deploy! Maybe...!";
