@@ -11,10 +11,11 @@ jobs:
 
       - name: Install php deps
         uses: php-actions/composer@v6 #automatically runs `composer install`
+        with:
+          working_dir: ..
 
       - name: Step 1 - Create a temporary artifact downloads folder
         run: mkdir downloads
-        working-directory: ..
 
       - name: step 2 - Add artifacts to publish to the temp folder
         run: |
