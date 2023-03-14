@@ -14,10 +14,11 @@ jobs:
 
       - name: Step 1 - Create a temporary artifact downloads folder
         run: mkdir downloads
+        working-directory: ..
 
       - name: step 2 - Add artifacts to publish to the temp folder
         run: |
-          mv vendor/monolog downloads
+          mv ../vendor/monolog downloads
           cd downloads
           echo '<?php'    > my-workflow-plugin.php
           cd ..
