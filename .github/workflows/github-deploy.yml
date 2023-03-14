@@ -8,8 +8,7 @@ jobs:
   archive-build-artifacts:
     runs-on: ubuntu-latest
     steps:
-
-      - run: ls
+      - uses: actions/checkout@v3
       - name: Install php deps
         uses: php-actions/composer@v6 #automatically runs `composer install`
         with:
