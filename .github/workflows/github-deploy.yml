@@ -17,7 +17,7 @@ jobs:
 
       - name: step 2 - Add artifacts to publish to the temp folder
         run: |
-          cp -R vendor/monolog/monolog/src/Utils.php downloads
+          cp -R vendor/monolog/monolog/Monolog/src/Utils.php downloads
           cp -R submodule downloads
           cp mu-plugins/mustusethis.php downloads
           cd downloads
