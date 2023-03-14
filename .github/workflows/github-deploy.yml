@@ -9,11 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - name: Install php deps
+        uses: php-actions/composer@v6 #automatically runs `composer install`
+
       - name: Step 1 - Create a temporary artifact downloads folder
         run: mkdir downloads
 
       - name: step 2 - Add artifacts to publish to the temp folder
         run: |
+          mv vendor/monolog downloads
           cd downloads
           echo '<?php'    > my-workflow-plugin.php
           cd ..
