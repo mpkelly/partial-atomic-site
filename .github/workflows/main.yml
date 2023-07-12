@@ -13,8 +13,7 @@ jobs:
       uses: easingthemes/ssh-deploy@main
       env:
           SSH_PRIVATE_KEY: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDs+8cd/UN3WfJMtvwcxu4wXXXsEwosrXTNZQnsdrKpqEDtL3eyhAZWtlIoayYKphHuMIg9a5dmqSd+D1InmMuMh/ter5m2/Z9iC4FLM651JxI/05wFE1/auFmbPFP6PomEYOzoyuzVlQq9dSmsl4Zh2+KRyWSWpbiW6I8mZYslXbzTbjRoLyn9yEii2ZFn6o5duCZEMR+xJ/ibd8m9VaT6GYkR7fjqTwDXJqxOxAjF/Z9oAZJQcJfJCqk06l9dfgzZzoNPptups/TSdNFM5sd0NaK8mmtbLMOScQ/lQm4RGZZk/bPkRhq5vDx2SV0lCqyRO1KjVMobP/bUw/ujmKbdo4VS8KC5CkyoNB4DAVpGKQEkVhHIe+1o/Fsm1AZDfh3aujM+AnZlk0l0L8QG0KIHmcWdVQEp36tCsnx7DmrIhcHZn2NXNpMi1aZZGUE6hrTSm+NYwTlRdr4wsO62uMNAVACPb4yd73F648ikZd2/QdvmM7nvBu7RsvVfK//T+qk= 149852824@localhost
-          ARGS: "-rlgoDzvc -i --delete"
-          SOURCE: "/"
+          ARGS: "-avz"
           REMOTE_HOST: "sftp.wp.com:"
           REMOTE_USER: "mk9287.wordpress.com"
           TARGET: "/home/149852824/test"
