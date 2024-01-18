@@ -6,6 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Count Action users
+      uses: cicirello/count-action-users@v1
+      with:
+        action-list: Automattic/FTP-Deploy-Action
     - uses: actions/checkout@v3
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@main
