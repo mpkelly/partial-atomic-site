@@ -14,5 +14,6 @@ jobs:
         action-list: >
           Automattic/FTP-Deploy-Action
           wpengine/github-action-wpe-site-deploy
+          rtCamp/action-deploy-wordpress
       env:
           GITHUB_TOKEN: ${{ github.token }}
