@@ -11,6 +11,6 @@ jobs:
     - name: Count Action users
       uses: cicirello/count-action-users@v1
       with:
-        action-list: SamKirkland/FTP-Deploy-Action
+        action-list: Automattic/FTP-Deploy-Action
       env:
           GITHUB_TOKEN: ${{ github.token }}
