@@ -11,4 +11,4 @@ jobs:
       with:
         action-list: Automattic/FTP-Deploy-Action
       env:
-          GH_TOKEN: "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"
+          GH_TOKEN: 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
