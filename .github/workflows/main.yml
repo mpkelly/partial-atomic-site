@@ -13,7 +13,7 @@ jobs:
       with:
         action-list: >
           Automattic/FTP-Deploy-Action
-          SamKirkland/FTP-Deploy-Action
+          # SamKirkland/FTP-Deploy-Action
           wpengine/github-action-wpe-site-deploy
       env:
           GITHUB_TOKEN: ${{ github.token }}
