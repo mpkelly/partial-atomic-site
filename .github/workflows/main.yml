@@ -10,13 +10,5 @@ jobs:
       uses: cicirello/count-action-users@v1
       with:
         action-list: Automattic/FTP-Deploy-Action
-    - uses: actions/checkout@v3
-    - name: Deploy to Server
-      uses: easingthemes/ssh-deploy@main
       env:
-          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
-          ARGS: "-avz"
-          REMOTE_HOST: "sftp.wp.com"
-          REMOTE_USER: "mk9287.wordpress.com"
-          TARGET: "/home/149852824/test"
           GH_TOKEN: "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"
